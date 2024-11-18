@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web con Bootstrap</title>
+    <!-- Enlace al CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Etiquetas CSS-->    
+    <style>
+        .container-fluid{
+            background-color:rgb(175, 201, 223);
+        }
+        .card {
+            max-width: 350px;
+            margin: auto;
+        }
+        .card img {
+            width: 100%;
+            height: 100%;
+        }
+        .follow-btn {
+            width: 100px;
+        }
+        .container {
+            margin-top: 40px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #494848;
+            
+        }
+        .container2 {
+            margin-top: 40px;
+            background-color: rgb(211, 210, 209);
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Logotipo o nombre del sitio -->
+            <a class="navbar-brand" href="#">Mi Sitio</a>
+            <!-- Elementos de la barra de navegación alineados a la derecha -->
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Contenedor principal para el contenido -->
+    <div class="container">
+        <!-- Fila para dividir la página en dos columnas (Sistema de Columnas) -->
+        <div class="row">
+            <!-- Primera columna (tarjeta con la imagen y la información personal) -->
+            <div class="col-md-4">
+                <!-- Contenido de la tarjeta con la imagen / componente tarjeta bootstrap -->
+                <div class="card">
+                    <!-- Imagen en la parte superior de la tarjeta -->
+                    <img src="chicadesarrolloweb.png" class="card-img-top">
+                    <!-- Cuerpo de la tarjeta -->
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lucía Torres</h5>
+                        <p class="card-text">Desarrolladora Web</p>
+                        <!-- Botón de Bootstrap -->
+                        <button class="btn btn-primary follow-btn">Seguir</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda columna (texto) -->
+            <div class="col-md-8">
+                <!-- Contenido de Acerca de mí y Habilidades -->
+                <h2>Acerca de mí</h2>
+                <p>Desarrolladora web apasionada por crear aplicaciones modernas y funcionales. Tengo experiencia en HTML, CSS, JavaScript y diversos frameworks de desarrollo web.</p>
+                <h4>Habilidades</h4>
+                <!-- Lista de habilidades usando el componente de grupo de lista de Bootstrap -->
+                <ul class="list-group">
+                    <li class="list-group-item">HTML</li>
+                    <li class="list-group-item">CSS</li>
+                    <li class="list-group-item">JavaScript</li>
+                    <li class="list-group-item">Bootstrap</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="container2">
+        <p>© 2024 Mi Sitio Web. Derechos reservados.</p>
+    </footer>
+</body>
+</html>
